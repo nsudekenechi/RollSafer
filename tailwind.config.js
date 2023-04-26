@@ -2,7 +2,13 @@
 export default {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
-    extend: {},
+
+
+    extend: {
+      borderRadius: {
+        'weird': '37% 63% 75% 25% / 73% 52% 48% 27% '
+      },
+    },
   },
   plugins: [],
 }
