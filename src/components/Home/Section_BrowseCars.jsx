@@ -28,12 +28,7 @@ export const Section_BrowseCars = () => {
               <div className="h-[400px]">
                 <img
                   src={`./Images/Cars/${item.img}`}
-                  className="w-[100%] h-[100%] object-cover object-center rounded-xl md:rounded-[37%] md:border-l-[10px] md:border-[rgba(0,0,0,.1)]"
-                  style={
-                    {
-                      // borderRadius: "37% 63% 75% 25% / 73% 52% 48% 27% ",
-                    }
-                  }
+                  className="w-[100%] h-[100%] object-cover object-center rounded-xl md:rounded-weird md:border-l-[10px] md:border-[rgba(0,0,0,.1)]"
                   alt=""
                 />
               </div>

@@ -6,6 +6,7 @@ import { Login } from "./Pages/Login";
 import { Profile } from "./Pages/Profile";
 import { SignUp } from "./Pages/SignUp";
 import { Trips } from "./Pages/Trips";
+import { Works } from "./Pages/Works";
 import { Footer } from "./components/Home/Footer";
 import { Nav } from "./components/Home/Nav";
 
@@ -62,6 +63,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/account" element={<Account />} />
         <Route path="/host" element={<Host />} />
+        <Route path="/works" element={<Works />} />
       </Routes>
 
       {/* <Footer /> */}
