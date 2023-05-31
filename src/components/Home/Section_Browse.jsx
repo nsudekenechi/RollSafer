@@ -5,7 +5,7 @@ import "swiper/swiper-bundle.min.css";
 export const Section_Browse = ({ data, text }) => {
   return (
     <section className="col-span-12  md:gap-2 grid grid-cols-12  items-center">
-      <div className="col-span-12  flex justify-between items-center md:px-5 mb-5">
+      <div className="col-span-12 gap-y-4 flex flex-col  items-start md:px-5 mb-5">
         <h1 className="text-xl font-bold">
           Browse by <span className="text-blue-500">{text}</span>
         </h1>
@@ -23,7 +23,7 @@ export const Section_Browse = ({ data, text }) => {
         breakpoints={{
           640: { slidesPerView: 3, spaceBetween: 10 },
           720: { slidesPerView: 4, spaceBetween: 15 },
-          1028: { slidesPerView: 4, spaceBetween: 20 },
+          1028: { slidesPerView: 5, spaceBetween: 30 },
         }}
         pagination={{
           type: "fraction",

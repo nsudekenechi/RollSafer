@@ -71,7 +71,7 @@ export const Section_BrowseMake = () => {
               } md:col-span-3 h-[150px] ${
                 index == 3 ? "hidden md:block" : "block"
               }`}
-              key={item}
+              key={index}
             >
               <img
                 src={`./Images/Cars/${item}`}

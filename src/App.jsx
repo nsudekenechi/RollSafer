@@ -4,6 +4,7 @@ import { Home } from "./Pages/Home";
 import { Host } from "./Pages/Host";
 import { Login } from "./Pages/Login";
 import { Profile } from "./Pages/Profile";
+import { Rent } from "./Pages/Rent";
 import { SignUp } from "./Pages/SignUp";
 import { Trips } from "./Pages/Trips";
 import { Works } from "./Pages/Works";
@@ -26,12 +27,12 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/favorites" element={<Favorites />} />
 
-        {relatedPages.trip.map((item) => (
+        {relatedPages.trip.map((item, index) => (
           <Route
             path={`/trips/${item}`}
+            key={index}
             element={
               <Trips
-                key={item}
                 section={{
                   path: item,
                   pages: relatedPages.trip,
@@ -43,12 +44,12 @@ function App() {
           />
         ))}
 
-        {relatedPages.inbox.map((item) => (
+        {relatedPages.inbox.map((item, index) => (
           <Route
             path={`/inbox/${item}`}
+            key={index}
             element={
               <Trips
-                key={item}
                 section={{
                   path: item,
                   pages: relatedPages.inbox,
@@ -64,6 +65,7 @@ function App() {
         <Route path="/account" element={<Account />} />
         <Route path="/host" element={<Host />} />
         <Route path="/works" element={<Works />} />
+        <Route path="/rent" element={<Rent />} />
       </Routes>
 
       {/* <Footer /> */}

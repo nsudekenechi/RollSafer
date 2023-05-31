@@ -20,3 +20,34 @@ export const byMake = [{ make: "BMW", img: "12.jpg" }, { make: "Mercedes", img: 
 export const byCategory = [{ make: "Cars", img: "17.jpg" }, { make: "Convertibles", img: "18.jpg" },
 { make: "Jeep", img: "19.jpg" }, { make: "Van", img: "20.jpg" },
 { make: "Sports", img: "21.jpg" }]
+
+export const guestSays = [
+    {
+        car: "Ford Fiesta",
+        message: "This is the best way to rent a car in Los Angeles",
+        name: "Andrew Tate",
+        date: "Jan 10, 2022",
+        img: "3.jpg"
+    },
+    {
+        car: "Jeep Wrangler",
+        message: "We had such a great experience taking this car from San Francisco to wine country",
+        name: "Talia John",
+        date: "April 21, 2022",
+        img: "4.jpg"
+    },
+    {
+        car: "Ford Fiesta",
+        message: "This is the best way to rent a car in Los Angeles",
+        name: "Andrew Tate",
+        date: "Jan 10, 2022",
+        img: "5.jpg"
+    },
+    {
+        car: "Jeep Wrangler",
+        message: "We had such a great experience taking this car from San Francisco to wine country",
+        name: "Talia John",
+        date: "April 21, 2022",
+        img: "6.jpg"
+    }
+]
