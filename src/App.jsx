@@ -66,6 +66,7 @@ function App() {
         <Route path="/host" element={<Host />} />
         <Route path="/works" element={<Works />} />
         <Route path="/rent" element={<Rent />} />
+        <Route path="/rent/:id" element={<Rent />} />
       </Routes>
 
       {/* <Footer /> */}

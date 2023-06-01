@@ -1,7 +1,20 @@
 import { FiMapPin, FiCalendar, FiSearch } from "react-icons/fi";
 import { MdArrowRightAlt } from "react-icons/md";
+import { useParams, Link } from "react-router-dom";
 import { Car } from "./Car";
+import { Rent_Cars } from "../../Data";
+import { useState } from "react";
 export const RentSection = ({ From, Until, DateElement }) => {
+  // Pagination
+  const page = useParams();
+  const Items = 2;
+  const startIndex = page.id - 1;
+  const endIndex = startIndex + Items - 1;
+  const pages = [];
+  for (let i = 1; i <= Math.floor(Rent_Cars.length / Items); i++) {
+    pages.push(i);
+  }
+
   return (
     <section className="pt-[10vh] pb-[5vh]">
       <header className="flex flex-col gap-y-10 h-[60vh]">
@@ -91,8 +104,47 @@ export const RentSection = ({ From, Until, DateElement }) => {
 
       <section className="px-5 md:px-[10vw]">
         <h1 className="text-2xl font-bold mb-10">Our Jeep Collections</h1>
-        <div className="grid grid-cols-3 gap-x-10">
-          <Car />
+        <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {Rent_Cars.map(
+            (item, index) =>
+              (index == startIndex || index == endIndex) && (
+                <Car
+                  key={index}
+                  data={{
+                    img: item.img,
+                    price: item.price,
+                    place: item.place,
+                    name: item.name,
+                    seat: item.seat,
+                    bag: item.bag,
+                    rating: item.rating,
+                  }}
+                />
+              )
+          )}
+        </div>
+
+        <div className="flex gap-x-5 justify-center py-10">
+          {pages.map((item, index) => (
+            <Link
+              to={`/rent/${item}`}
+              className={`px-3 py-1  rounded-full  flex items-center justify-center ${
+                (!page.id && item == 1) || item == page.id
+                  ? "bg-blue-500 text-white shadow-md transition duration-1000"
+                  : "border text-blue-500"
+              }  `}
+              key={index}
+            >
+              {item}
+            </Link>
+          ))}
+
+          {/* <Link
+            to=""
+            className="px-3 py-1 border rounded-full  flex items-center justify-center text-blue-500 cursor-pointer"
+          >
+            2
+          </Link> */}
         </div>
       </section>
     </section>

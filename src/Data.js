@@ -163,3 +163,82 @@ export const Host = [
     year: "Oct 2022"
   },
 ]
+
+export const Rent_Cars = [
+  {
+    img: "10.jpg",
+    price: 20.67,
+    place: "Jos",
+    name: "Mercedes 2012 JBL",
+    seat: 5,
+    bag: 3,
+    rating: 2.5,
+  },
+
+  {
+    img: "14.jpg",
+    price: 28.62,
+    place: "Paris",
+    name: "Acura 2021 XPW",
+    seat: 2,
+    bag: 1,
+    rating: 6.1,
+  },
+  {
+    img: "15.jpg",
+    price: 62.23,
+    place: "Lagos",
+    name: "Xaowi J190 F",
+    seat: 5,
+    bag: 3,
+    rating: 2.5,
+  },
+
+  {
+    img: "17.jpg",
+    price: 20.67,
+    place: "Jos",
+    name: "Mercedes 2012 JBL",
+    seat: 5,
+    bag: 3,
+    rating: 2.5,
+  },
+  {
+    img: "18.jpg",
+    price: 30.53,
+    place: "Abuja",
+    name: "Lexus 410",
+    seat: 4,
+    bag: 2,
+    rating: 4,
+  },
+
+  {
+    img: "19.jpg",
+    price: 20.67,
+    place: "Jos",
+    name: "Mercedes 2012 JBL",
+    seat: 5,
+    bag: 3,
+    rating: 2.5,
+  },
+  {
+    img: "20.jpg",
+    price: 20.67,
+    place: "Jos",
+    name: "Mercedes 2012 JBL",
+    seat: 5,
+    bag: 3,
+    rating: 2.5,
+  },
+
+  {
+    img: "21.jpg",
+    price: 20.67,
+    place: "Jos",
+    name: "Mercedes 2012 JBL",
+    seat: 5,
+    bag: 3,
+    rating: 2.5,
+  },
+]
