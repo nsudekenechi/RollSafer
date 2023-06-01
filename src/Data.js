@@ -176,7 +176,7 @@ export const Rent_Cars = [
   },
 
   {
-    img: "14.jpg",
+    img: "20.jpg",
     price: 28.62,
     place: "Paris",
     name: "Acura 2021 XPW",
@@ -185,7 +185,7 @@ export const Rent_Cars = [
     rating: 6.1,
   },
   {
-    img: "15.jpg",
+    img: "12.jpg",
     price: 62.23,
     place: "Lagos",
     name: "Xaowi J190 F",
@@ -195,7 +195,7 @@ export const Rent_Cars = [
   },
 
   {
-    img: "17.jpg",
+    img: "13.jpg",
     price: 20.67,
     place: "Jos",
     name: "Mercedes 2012 JBL",
@@ -204,7 +204,7 @@ export const Rent_Cars = [
     rating: 2.5,
   },
   {
-    img: "18.jpg",
+    img: "14.jpg",
     price: 30.53,
     place: "Abuja",
     name: "Lexus 410",
@@ -214,7 +214,7 @@ export const Rent_Cars = [
   },
 
   {
-    img: "19.jpg",
+    img: "15.jpg",
     price: 20.67,
     place: "Jos",
     name: "Mercedes 2012 JBL",
@@ -223,7 +223,7 @@ export const Rent_Cars = [
     rating: 2.5,
   },
   {
-    img: "20.jpg",
+    img: "16.jpg",
     price: 20.67,
     place: "Jos",
     name: "Mercedes 2012 JBL",
@@ -233,7 +233,7 @@ export const Rent_Cars = [
   },
 
   {
-    img: "21.jpg",
+    img: "17.jpg",
     price: 20.67,
     place: "Jos",
     name: "Mercedes 2012 JBL",

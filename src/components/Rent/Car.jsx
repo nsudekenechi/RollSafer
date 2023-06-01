@@ -7,7 +7,7 @@ export const Car = ({ data }) => {
     <div className="hover:scale-90 scale-95 hover:shadow-card hover:shadow-black/10 duration-1000 col-span-1 flex flex-col gap-y-5 border px-4 py-5 rounded-tr-3xl rounded-bl-3xl ">
       <div className="h-[200px]">
         <img
-          src={`./Images/Cars/${data.img}`}
+          src={`../../../public/./Images/Cars/${data.img}`}
           className="w-[100%] h-[100%] object-cover rounded-tr-3xl rounded-bl-3xl"
           alt=""
         />

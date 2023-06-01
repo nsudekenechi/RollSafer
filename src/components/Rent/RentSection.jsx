@@ -3,12 +3,11 @@ import { MdArrowRightAlt } from "react-icons/md";
 import { useParams, Link } from "react-router-dom";
 import { Car } from "./Car";
 import { Rent_Cars } from "../../Data";
-import { useState } from "react";
 export const RentSection = ({ From, Until, DateElement }) => {
   // Pagination
   const page = useParams();
   const Items = 2;
-  const startIndex = page.id - 1;
+  const startIndex = page.id ? page.id - 1 : 0;
   const endIndex = startIndex + Items - 1;
   const pages = [];
   for (let i = 1; i <= Math.floor(Rent_Cars.length / Items); i++) {
@@ -128,23 +127,16 @@ export const RentSection = ({ From, Until, DateElement }) => {
           {pages.map((item, index) => (
             <Link
               to={`/rent/${item}`}
-              className={`px-3 py-1  rounded-full  flex items-center justify-center ${
+              className={` duration-1000 px-3 py-1 hover:rotate-[360deg]  rounded-full  flex items-center justify-center ${
                 (!page.id && item == 1) || item == page.id
-                  ? "bg-blue-500 text-white shadow-md transition duration-1000"
-                  : "border text-blue-500"
+                  ? "bg-blue-500 text-white shadow-md transition "
+                  : "border text-blue-500 "
               }  `}
               key={index}
             >
               {item}
             </Link>
           ))}
-
-          {/* <Link
-            to=""
-            className="px-3 py-1 border rounded-full  flex items-center justify-center text-blue-500 cursor-pointer"
-          >
-            2
-          </Link> */}
         </div>
       </section>
     </section>
