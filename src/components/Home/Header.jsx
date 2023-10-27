@@ -2,7 +2,7 @@ export const Header = () => {
   const images = [1, 2, 3, 4];
   return (
     <header className="mb-[100px] md:mb-[30vh] ">
-      <div className="my-10 grid grid-cols-12 md:gap-10">
+      <div className="my-10 grid grid-cols-12 md:gap-10 items-center">
         <div className="col-span-12 md:col-span-5 ">
           <h1 className=" text-[5rem] font-bold" style={{ lineHeight: "5rem" }}>
             <span className="text-blue-500">Rent</span> the best cars in the
@@ -23,8 +23,10 @@ export const Header = () => {
         </div>
 
         <div className="hidden md:block md:col-span-7 ">
-          <div className="bg-[url(./Images/Cars/1.png)] h-[300px]  bg-cover bg-center"></div>
-          <div className="flex  mt-20 gap-20 items-center justify-center ">
+          <div className="h-[400px] flex justify-center items-center">
+            <img src="./Images/Cars/1.png" alt="" className="h-[100%] w-[100%]"/>
+          </div>
+          <div className="flex gap-x-20 items-center justify-center ">
             {images.map((image) => (
               <div className="" key={image}>
                 <img

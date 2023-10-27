@@ -34,14 +34,14 @@ export const Section_BrowseCars = () => {
               </div>
             </div>
             <div className="col-span-12 md:col-span-6 ">
-              <p className="capitalize text-[rgba(0,0,0,.2)] text-2xl mb-2">
+              <p className="capitalize text-black/40 text-2xl mb-2">
                 {item.headingText}
               </p>
-              <h1 className="uppercase text-6xl font-extrabold">
+              <h1 className="uppercase text-4xl font-extrabold">
                 {item.bigText}
               </h1>
               <div className="mt-5">
-                <p className="mb-10 text-xl">{item.subText}</p>
+                <p className="mb-5 text-xl md:text-sm text-black/50">{item.subText}</p>
 
                 <a
                   href=""

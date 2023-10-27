@@ -6,7 +6,7 @@ import { Section } from "../components/Home/Section";
 export const Home = () => {
   return (
     <>
-      <div className="container mx-auto px-5">
+      <div className="container mx-auto px-5 md:px-20">
         <Header />
         <Section />
         <Footer />
